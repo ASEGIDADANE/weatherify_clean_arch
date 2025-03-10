@@ -31,4 +31,3 @@ class WeatherBloc extends Bloc<WeatherEvent,WeatherState> {
 EventTransformer<T> debounce<T>(Duration duration) {
     return (events, mapper) => events.debounceTime(duration).flatMap(mapper);
   }
-  
